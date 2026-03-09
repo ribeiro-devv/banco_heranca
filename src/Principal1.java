@@ -1,0 +1,24 @@
+import com.mrsoft.banco.Conta;
+import com.mrsoft.banco.Titular;
+
+public class Principal1 {
+
+    public static void main(String[] args) {
+        Conta conta1 = new Conta();
+
+        conta1.setTitular(new Titular("João Silva", "12345678900"));
+        conta1.setAgencia(1234);
+        conta1.setNumero(56789);
+//        conta1.setLimiteCredito(100.00);
+
+        conta1.imprimirDemonstrativo();
+
+        conta1.depositar(1000.00);
+
+        conta1.imprimirDemonstrativo();
+        conta1.sacar(200.00);
+        conta1.imprimirDemonstrativo();
+
+//        conta1.creditarRendimento(5);
+    }
+}
