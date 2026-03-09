@@ -1,11 +1,13 @@
 package com.mrsoft.banco;
 
-public class Conta {
-
+public class ContaInvestimento {
     private Titular titular;
     private int agencia;
     private int numero;
     private double saldo;
+
+    private double valorTotalRendimentos;
+
 
     public Titular getTitular() {
         return titular;
@@ -35,6 +37,17 @@ public class Conta {
         return saldo;
     }
 
+    public double getValorTotalRendimentos() {
+        return valorTotalRendimentos;
+    }
+
+    public void creditarRendimento(double percentualJuros) {
+        double valorRendimentos = getSaldo() * percentualJuros / 100;
+
+        this.valorTotalRendimentos += valorRendimentos;
+        depositar(valorRendimentos);
+    }
+
     public void sacar(double valorSaque) {
         if (valorSaque <= 0) {
             throw new IllegalArgumentException("Valor de saque deve ser maior que 0.");
@@ -60,6 +73,5 @@ public class Conta {
         System.out.println("Agência: " + getAgencia());
         System.out.println("Número: " + getNumero());
         System.out.printf("Saldo: R$ %.2f%n", getSaldo());
-        System.out.printf("Saldo Disponível: R$ %.2f%n", getSaldo());
     }
 }
