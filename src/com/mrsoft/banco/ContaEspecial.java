@@ -46,5 +46,13 @@ public class ContaEspecial extends ContaInvestimento {
         super.imprimirDemonstrativo();
         System.out.printf("Saldo Disponível: R$ %.2f%n", getSaldoDisponivel());
     }
+
+    @Override
+    public String toString() {
+        return "ContaEspecial{" +
+                "tarifaMensal=" + tarifaMensal +
+                ", limiteChequeEspecial=" + limiteChequeEspecial +
+                '}';
+    }
 }
 
