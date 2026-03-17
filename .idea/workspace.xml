@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8e36d0f-5f50-4a5c-93d2-4d7bbda73373" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/mrsoft/banco/ContaEspecial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/mrsoft/banco/ContaInvestimento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/banco/Principal2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/banco/Principal2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/banco/Principal3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/banco/Principal3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/banco/com/mrsoft/banco/Conta.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/banco/com/mrsoft/banco/Conta.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/banco/com/mrsoft/banco/ContaEspecial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/banco/com/mrsoft/banco/ContaEspecial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/banco/com/mrsoft/banco/ContaInvestimento.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/banco/com/mrsoft/banco/ContaInvestimento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Principal1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Principal2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Principal3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/mrsoft/banco/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mrsoft/banco/Conta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mrsoft/banco/ContaEspecial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mrsoft/banco/ContaEspecial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mrsoft/banco/ContaInvestimento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mrsoft/banco/ContaInvestimento.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +43,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ribeiro-devv&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ribeiro-devv/banco_heranca.git&quot;,
+    &quot;accountId&quot;: &quot;f0abfd1b-2212-418f-bb73-1908ae28377e&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -45,30 +63,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Principal.executor": "Run",
-    "Application.Principal1.executor": "Run",
-    "Application.Principal2.executor": "Run",
-    "Application.Principal3.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "ESTUDO-001",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/workspace/projetos/banco/src/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Principal.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Principal1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Principal2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Principal3.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ESTUDO-002&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/workspace/projetos/banco/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.mrsoft.banco" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Principal2">
+  <component name="RunManager" selected="Application.Principal3">
     <configuration name="Principal1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Principal1" />
       <module name="banco" />
@@ -92,9 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Principal2" />
         <item itemvalue="Application.Principal3" />
         <item itemvalue="Application.Principal1" />
+        <item itemvalue="Application.Principal2" />
+        <item itemvalue="Application.Principal2" />
+        <item itemvalue="Application.Principal3" />
       </list>
     </recent_temporary>
   </component>
