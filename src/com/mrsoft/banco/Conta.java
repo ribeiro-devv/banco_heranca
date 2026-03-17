@@ -7,41 +7,40 @@ public class Conta {
     private int numero;
     private double saldo;
 
-    public Titular getTitular() {
-        return titular;
+    public Conta(Titular titular, int agencia, int numero) {
+        this.titular = titular;
+        this.agencia = agencia;
+        this.numero = numero;
     }
 
-    public void setTitular(Titular titular) {
-        this.titular = titular;
+    public Titular getTitular() {
+        return titular;
     }
 
     public int getAgencia() {
         return agencia;
     }
 
-    public void setAgencia(int agencia) {
-        this.agencia = agencia;
-    }
-
     public int getNumero() {
         return numero;
-    }
-
-    public void setNumero(int numero) {
-        this.numero = numero;
     }
 
     public double getSaldo() {
         return saldo;
     }
 
+    protected void validarSaldoParaSaque(double valorSaque) {
+        if (getSaldo() < valorSaque) {
+            throw new IllegalArgumentException("Saldo insuficiente para o saque.");
+        }
+    }
+
     public void sacar(double valorSaque) {
         if (valorSaque <= 0) {
             throw new IllegalArgumentException("Valor de saque deve ser maior que 0.");
         }
-        if (getSaldo() < valorSaque) {
-            throw new IllegalArgumentException("Saldo insuficiente para o saque.");
-        }
+
+        validarSaldoParaSaque(valorSaque);
 
         saldo -= valorSaque;
     }
@@ -60,6 +59,5 @@ public class Conta {
         System.out.println("Agência: " + getAgencia());
         System.out.println("Número: " + getNumero());
         System.out.printf("Saldo: R$ %.2f%n", getSaldo());
-        System.out.printf("Saldo Disponível: R$ %.2f%n", getSaldo());
     }
 }
